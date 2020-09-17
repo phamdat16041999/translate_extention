@@ -1,0 +1,38 @@
+{
+  // Required
+  "manifest_version": 2,
+  "name": "DS English",
+  "version": "1.0",
+
+  // Recommended
+  "description": "Application for learn English",
+  "icons": { "16": "icon.png",
+  	"48": "icon.png",
+  "128": "icon.png" },
+  // Optional
+  "author": "Pham Dat",
+  "background": {
+  },
+  "browser_action": {
+  	"default_icon": {
+  		"16": "icon.png",  
+  		"24": "icon.png", 
+  		"32": "icon.png"   
+  	},
+  	"default_title": "DS Englishl"  
+/*  	"default_popup": "popup/popup.html"    */   
+  },  
+  //Luon chay khi khoi dong trang web
+
+  "content_scripts": [
+  	{
+  		"matches": ["<all_urls>"],
+  		/*"css": ["myStyles.css"],*/
+  		"js": ["popup/popup.js"]
+  	}
+  ], 
+  "background": {
+  	"scripts": ["background/background.js"],
+  	"persistent": false
+  }
+}
