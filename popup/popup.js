@@ -125,7 +125,7 @@ function createHTML(content, x, y){
 	document.getElementById("input1").type = "submit";
 	/*style form*/
 	document.getElementById("form").target = "_blank";
-	document.getElementById("form").action = "http://localhost:8000/user/addVocabularyExtention/"+content[0].toUpperCase()+"/"+content[1]+"";
+	document.getElementById("form").action = "https://dsenglish.herokuapp.com/user/addVocabularyExtention/"+content[0].toUpperCase()+"/"+content[1]+"";
 }
 function blockContent()
 {
